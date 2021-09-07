@@ -554,6 +554,25 @@ $ random-randn -n 10 --name improved-ziggurat --seed 1234
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/random/base/randn`][@stdlib/random/base/randn]: standard normal pseudorandom numbers.
+-   [`@stdlib/random/iter/randn`][@stdlib/random/iter/randn]: create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.
+-   [`@stdlib/random/streams/box-muller`][@stdlib/random/streams/box-muller]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Box-Muller transform.
+-   [`@stdlib/random/streams/improved-ziggurat`][@stdlib/random/streams/improved-ziggurat]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Improved Ziggurat algorithm.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -620,6 +639,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
 
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+
+<!-- <related-links> -->
+
+[@stdlib/random/base/randn]: https://github.com/stdlib-js/random-base-randn
+
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
+
+[@stdlib/random/streams/box-muller]: https://github.com/stdlib-js/random-streams-box-muller
+
+[@stdlib/random/streams/improved-ziggurat]: https://github.com/stdlib-js/random-streams-improved-ziggurat
+
+<!-- </related-links> -->
 
 </section>
 
