@@ -20,7 +20,7 @@ limitations under the License.
 
 # randn
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a standard normal distribution.
 
@@ -562,10 +562,10 @@ $ random-randn -n 10 --name improved-ziggurat --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/randn`][@stdlib/random/base/randn]: standard normal pseudorandom numbers.
--   [`@stdlib/random/iter/randn`][@stdlib/random/iter/randn]: create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.
--   [`@stdlib/random/streams/box-muller`][@stdlib/random/streams/box-muller]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Box-Muller transform.
--   [`@stdlib/random/streams/improved-ziggurat`][@stdlib/random/streams/improved-ziggurat]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Improved Ziggurat algorithm.
+-   <span class="package-name">[`@stdlib/random/base/randn`][@stdlib/random/base/randn]</span><span class="delimiter">: </span><span class="description">standard normal pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/randn`][@stdlib/random/iter/randn]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.</span>
+-   <span class="package-name">[`@stdlib/random/streams/box-muller`][@stdlib/random/streams/box-muller]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Box-Muller transform.</span>
+-   <span class="package-name">[`@stdlib/random/streams/improved-ziggurat`][@stdlib/random/streams/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Improved Ziggurat algorithm.</span>
 
 </section>
 
@@ -616,8 +616,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-streams-randn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-streams-randn?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/random-streams-randn.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/random-streams-randn/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
