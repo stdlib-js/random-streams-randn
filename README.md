@@ -177,16 +177,16 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-streams-randn-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-streams-randn-cli
 
-[test-image]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/random-streams-randn/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/random-streams-randn/actions/workflows/test.yml?query=branch:v0.1.0
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-streams-randn@v0.1.0/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/random-streams-randn@v0.1.0?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-streams-randn/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/random-streams-randn?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/random-streams-randn@v0.1.0.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/random-streams-randn@v0.1.0/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/random-streams-randn.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/random-streams-randn/main
 
 -->
 
@@ -197,19 +197,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/random-streams-randn@v0.1.0#cli
-[cli-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/tree/cli
-[@stdlib/random-streams-randn]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/tree/main
+[cli-section]: https://github.com/stdlib-js/random-streams-randn#cli
+[cli-url]: https://github.com/stdlib-js/random-streams-randn/tree/cli
+[@stdlib/random-streams-randn]: https://github.com/stdlib-js/random-streams-randn/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/tree/deno
-[umd-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/tree/umd
-[esm-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/tree/esm
-[branches-url]: https://github.com/stdlib-js/random-streams-randn@v0.1.0/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/random-streams-randn/tree/deno
+[umd-url]: https://github.com/stdlib-js/random-streams-randn/tree/umd
+[esm-url]: https://github.com/stdlib-js/random-streams-randn/tree/esm
+[branches-url]: https://github.com/stdlib-js/random-streams-randn/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-streams-randn@v0.1.0/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-streams-randn/main/LICENSE
 
 [stream]: https://nodejs.org/api/stream.html
 
