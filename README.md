@@ -35,31 +35,20 @@ limitations under the License.
 
 > Create a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a standard normal distribution.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-streams-randn
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var randomStream = require( '@stdlib/random-streams-randn' );
+import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-randn@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-randn@deno/mod.js';
 ```
 
 <a name="random-stream"></a>
@@ -69,7 +58,7 @@ var randomStream = require( '@stdlib/random-streams-randn' );
 Returns a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a standard normal distribution.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 var iStream;
 var stream;
@@ -131,7 +120,7 @@ var stream = randomStream( opts );
 By default, the function returns a [stream][stream] which can generate an infinite number of values (i.e., the [stream][stream] will **never** end). To limit the number of generated pseudorandom numbers, set the `iter` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -150,7 +139,7 @@ stream.pipe( iStream );
 By default, when not operating in [objectMode][object-mode], a returned [stream][stream] delineates generated pseudorandom numbers using a newline character. To specify an alternative separator, set the `sep` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -180,7 +169,7 @@ var stream = randomStream( opts );
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom numbers, set the `prng` option.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
 
 var opts = {
     'prng': minstd.normalized
@@ -192,7 +181,7 @@ var stream = randomStream( opts );
 To seed the underlying pseudorandom number generator, set the `seed` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( v ) {
     console.log( v );
@@ -218,7 +207,7 @@ stream.pipe( iStream );
 To return a [readable stream][readable-stream] with an underlying pseudorandom number generator having a specific initial state, set the `state` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( v ) {
     console.log( v );
@@ -268,7 +257,7 @@ var seed = stream.seed;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream({
     'prng': minstd
@@ -292,7 +281,7 @@ var len = stream.seedLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream({
     'prng': minstd
@@ -315,7 +304,7 @@ var state = stream.state;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream({
     'prng': minstd
@@ -339,7 +328,7 @@ var len = stream.stateLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream({
     'prng': minstd
@@ -363,7 +352,7 @@ var sz = stream.byteLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream({
     'prng': minstd
@@ -398,7 +387,7 @@ The method accepts the same `options` as [`randomStream()`](#random-stream).
 This method is a convenience function to create [streams][stream] which **always** operate in [objectMode][object-mode].
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( v ) {
     console.log( v );
@@ -471,8 +460,8 @@ function onState( state ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-var randomStream = require( '@stdlib/random-streams-randn' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-randn@deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
@@ -499,82 +488,7 @@ stream.pipe( iStream );
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/random-streams-randn-cli
-```
-
-</section>
-<!-- CLI usage documentation. -->
-
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: random-randn [options]
-
-Options:
-
-  -h,  --help               Print this message.
-  -V,  --version            Print the package version.
-       --sep sep            Separator used to join streamed data. Default: '\n'.
-  -n,  --iter iterations    Number of pseudorandom numbers.
-       --name name          Pseudorandom number generator name. Default:
-                            'improved-ziggurat'.
-       --seed seed          Pseudorandom number generator seed.
-       --state filepath     Path to a file containing the pseudorandom number
-                            generator state.
-       --snapshot filepath  Output file path for saving the pseudorandom number
-                            generator state upon exit.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-### Notes
-
--   In accordance with POSIX convention, a trailing newline is **always** appended to generated output prior to exit.
--   Specifying a "snapshot" file path is useful when wanting to resume pseudorandom number generation due to, e.g., a downstream failure in an analysis pipeline. Before exiting, the process will store the pseudorandom number generator state in a file specified according to a provided file path. Upon loading a snapshot (state), the process will generate pseudorandom numbers starting from the loaded state, thus avoiding having to seed and replay an entire analysis.
-
-</section>
-
-<!-- /.notes -->
-
-<!-- CLI usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ random-randn -n 10 --name improved-ziggurat --seed 1234
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -602,7 +516,7 @@ $ random-randn -n 10 --name improved-ziggurat --seed 1234
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -672,21 +586,21 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [readable-stream]: https://nodejs.org/api/stream.html
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
+[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat/tree/deno
 
-[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
+[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller/tree/deno
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/randn]: https://github.com/stdlib-js/random-base-randn
+[@stdlib/random/base/randn]: https://github.com/stdlib-js/random-base-randn/tree/deno
 
-[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn/tree/deno
 
-[@stdlib/random/streams/box-muller]: https://github.com/stdlib-js/random-streams-box-muller
+[@stdlib/random/streams/box-muller]: https://github.com/stdlib-js/random-streams-box-muller/tree/deno
 
-[@stdlib/random/streams/improved-ziggurat]: https://github.com/stdlib-js/random-streams-improved-ziggurat
+[@stdlib/random/streams/improved-ziggurat]: https://github.com/stdlib-js/random-streams-improved-ziggurat/tree/deno
 
 <!-- </related-links> -->
 
